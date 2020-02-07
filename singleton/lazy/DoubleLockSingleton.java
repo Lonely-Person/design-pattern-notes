@@ -3,6 +3,8 @@ package singleton.lazy;
 public class DoubleLockSingleton {
 
     //volatile 相当于第二把所，其他线程执行到 #1处会从主线程重新拷贝值，如果不为空则不向下进行了
+    //而且保证了不乱序
+    //new的三部曲： 1.在堆内存开辟内存空间。2.在堆内存中实例化SingleTon里面的各个参数。3.把对象指向堆内存空间。
     private volatile static DoubleLockSingleton instance;
     private DoubleLockSingleton(){}
     public static DoubleLockSingleton getInstance(){
