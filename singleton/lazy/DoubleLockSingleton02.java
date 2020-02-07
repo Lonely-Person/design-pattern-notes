@@ -4,6 +4,7 @@ public class DoubleLockSingleton02 {
     private static DoubleLockSingleton02 instance = null;
     public static DoubleLockSingleton02 getInstance() {
         //这种实现方式存疑
+        //
         if (instance == null) {
             DoubleLockSingleton02 sc;
             synchronized (DoubleLockSingleton02.class) {
