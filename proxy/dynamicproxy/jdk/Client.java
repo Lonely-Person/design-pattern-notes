@@ -16,9 +16,7 @@ public class Client {
         Star star = (Star)proxy.createProxyedObj();
 
         //分析：
-        //表面上看不到代理类和接口Star之间有任何联系，
-        //只是代理实现了InvocationHandler，然后使用Proxy生成了一个被代理对象，
-        //我的猜测是代理，通过被代理对象拿到的接口Star，最终生成了一个如下的关系
+        //代理类通过Proxy.newProxyInstance()中的第二个参数拿到的被代理类的 接口
         //public final class StarProxy extends Proxy implements Star
 
         star.dance();
