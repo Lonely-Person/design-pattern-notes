@@ -5,7 +5,7 @@ public class LazySingleton {
     //持有自己类型的属性
     private static LazySingleton instance;
     //构造器私有
-    private LazySingleton(){};
+    private LazySingleton(){}
 
     //对外提供获取实例的静态方法
     public static LazySingleton getInstance(){
