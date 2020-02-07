@@ -18,6 +18,7 @@ public class StarProxy implements InvocationHandler {
 
         //增强的内容
         System.out.println("我是明星的代理人，我来收钱的！");
+        //result接收的就是方法的返回值
         Object result = method.invoke(target, args);
         return result;
     }

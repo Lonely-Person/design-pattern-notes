@@ -19,6 +19,7 @@ public class Client {
         //代理类通过Proxy.newProxyInstance()中的第二个参数拿到的被代理类的 接口
         //public final class StarProxy extends Proxy implements Star
 
-        star.dance();
+        String dance = star.dance();
+        System.out.println(dance);
     }
 }
