@@ -17,7 +17,7 @@ public class DoubleLockSingleton {
                     instance = new DoubleLockSingleton();
                 }
             }
-        }
+        } //
         return instance;
     }
 
