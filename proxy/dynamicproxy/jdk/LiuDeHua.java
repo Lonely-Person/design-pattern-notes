@@ -9,6 +9,7 @@ public class LiuDeHua implements Star {
 
     @Override
     public String dance() {
+        //
         System.out.println("我跳");
         return "我跳完了";
     }
