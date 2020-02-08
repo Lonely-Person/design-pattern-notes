@@ -1,6 +1,6 @@
 package proxy.staticproxy;
 
-import com.sun.org.apache.bcel.internal.generic.NEW;
+
 
 public class MarryProxy implements Marry {
 
